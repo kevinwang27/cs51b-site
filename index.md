@@ -1,35 +1,40 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# CS 51B: Intro to Frontend Development
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+**Instructors**: Kevin Wang / **Teaching Assistants**: Kevin Wang
 
-More specifically, the created site:
+Can you guess why I chose the numbers 5/1? 🙂
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+---
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+{: .warning }
+> This is not a real class. If you somehow happened to stumble upon this website, it was created specifically for one person, who alone has access to any content aside from the text of this website (videos, project code, etc). If you are interested in learning frontend development, I would recommend trying out [Frontend Masters](https://frontendmasters.com).
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Welcome to CS 51B: Intro to Frontend Development!
 
-To get started with creating a site, simply:
+In this class, you will learn how to create the frontend of various types of applications, starting with web applications using the basic programming languages, HTML, CSS, and Javascript, and then moving onto frameworks and other platforms. Along the way, you will complete projects using the skills you learn and produce real applications that people will be able to visit and use.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+By the end of the class, you should be familiar with some of the most common technologies used by frontend developers today and be able to use them to create the applications that you come up with!
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## Course Info
 
-----
+### Prerequisites
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+There is only one prerequisite to this class: you must have at least three years of experience as a product designer at a startup in San Francisco.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+### Logistics
+
+This class is remote first. All of the course material and assignments can be done from the comfort of your fuzzy saucer chair.
+
+Your instructors and TAs are all available to help both in person and virtually. Their contact information is listed in the [Staff](#staff) page.
+
+### Course Format
+
+CS 51B is a project based class. The material in this class is made up primarily of online learning content and projects to apply what you learn. There will be no exams.
+
+Discussion sections to review material and office hours for project help will be held ad hoc upon student request.
