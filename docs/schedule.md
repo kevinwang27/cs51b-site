@@ -8,27 +8,27 @@ nav_order: 2
 
 ### Month 1
 
-* [Bootcamp](https://frontendmasters.com/bootcamp/)
-
 Lectures
 {: .label }
 
 Project
 {: .label .label-green}
+
+* [Bootcamp](https://frontendmasters.com/bootcamp/)
 
 ### Month 2
 
-* [Project 1](#project-1)
-
 Project
 {: .label .label-green}
 
-### Month 3
+* [Project 1](#project-1)
 
-* [Intro to React](https://frontendmasters.com/courses/complete-react-v8/) (Lectures)
+### Month 3
 
 Lectures
 {: .label }
+
+* [Intro to React](https://frontendmasters.com/courses/complete-react-v8/)
 
 ### Month 4
 
