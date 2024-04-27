@@ -1,5 +1,5 @@
 ---
-title: Project 1 - Convergence
+title: 'Project 1:  Convergence'
 layout: default
 nav_order: 1
 parent: Projects
