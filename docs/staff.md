@@ -8,12 +8,12 @@ nav_order: 3
 
 ## Instructors
 
-![](../assets/kevin.png)
+![](../assets/kevin_small.png)
 
 **Kevin Wang** / kevinwang27 (at) berkeley.edu
 
 ## Teaching Assistants
 
-![](../assets/kevin.png)
+![](../assets/kevin_small.png)
 
 **Kevin Wang** / kevinwang27 (at) berkeley.edu

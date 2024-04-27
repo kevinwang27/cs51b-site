@@ -8,8 +8,6 @@ nav_order: 1
 
 **Instructors**: Kevin Wang / **Teaching Assistants**: Kevin Wang
 
-Can you guess why I chose the numbers 5/1? 🙂
-
 ---
 
 {: .warning }
@@ -20,6 +18,8 @@ Can you guess why I chose the numbers 5/1? 🙂
 In this class, you will learn how to create the frontend of various types of applications, starting with web applications using the basic programming languages, HTML, CSS, and Javascript, and then moving onto frameworks and other platforms. Along the way, you will complete projects using the skills you learn and produce real applications that people will be able to visit and use.
 
 By the end of the class, you should be familiar with some of the most common technologies used by frontend developers today and be able to use them to create the applications that you come up with!
+
+PS: Can you guess why I chose the numbers 5/1? 🙂
 
 ## Course Info
 

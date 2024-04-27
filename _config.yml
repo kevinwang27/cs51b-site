@@ -3,3 +3,8 @@ description: Class website for CS 51B
 theme: just-the-docs
 
 url: https://kevinwang27.github.io/cs51b-site
+
+callouts:
+  warning:
+    title: Warning
+    color: red
