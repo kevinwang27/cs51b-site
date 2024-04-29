@@ -7,6 +7,9 @@ url: https://kevinwang27.github.io/cs51b-site
 favicon_ico: "/assets/favicon.ico"
 
 callouts:
+  note:
+    title: note
+    color: blue
   warning:
     title: Warning
     color: red
