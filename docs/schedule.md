@@ -6,29 +6,19 @@ nav_order: 2
 
 # Schedule
 
+[Skip to current month](#month-2){: .btn .btn-outline }
+
 ### Month 1
 
-Lectures
-{: .label }
-
-Project
-{: .label .label-green}
-
-* [Bootcamp](https://frontendmasters.com/bootcamp/)
+* [Frontend Masters - Bootcamp](https://frontendmasters.com/bootcamp/) Lecture{: .label} Project{: .label .label-green}
 
 ### Month 2
 
-Project
-{: .label .label-green}
-
-* [Project 1](#project-1)
+* [Project 1: Convergence]({% link docs/projects/1-convergence.md %}) Project{: .label .label-green}
 
 ### Month 3
 
-Lectures
-{: .label }
-
-* [Intro to React](https://frontendmasters.com/courses/complete-react-v8/)
+* [Frontend Masters - Intro to React](https://frontendmasters.com/courses/complete-react-v8/) Lecture{: .label }
 
 ### Month 4
 

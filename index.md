@@ -32,7 +32,7 @@ There is only one prerequisite to this class:
 
 This class is remote first. All of the course material and assignments can be done from the comfort of your fuzzy saucer chair.
 
-Your instructors and TAs are all available to help both in person and virtually. Their contact information is listed in the [Staff](/docs/staff.md) page.
+Your instructors and TAs are all available to help both in person and virtually. Their contact information is listed in the [Staff]({% link docs/staff.md %}) page.
 
 ### Course Format
 

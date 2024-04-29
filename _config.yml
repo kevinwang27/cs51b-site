@@ -4,6 +4,8 @@ theme: just-the-docs
 
 url: https://kevinwang27.github.io/cs51b-site
 
+favicon_ico: "/assets/favicon.ico"
+
 callouts:
   warning:
     title: Warning
