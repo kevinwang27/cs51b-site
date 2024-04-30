@@ -94,30 +94,33 @@ The backend service also publishes game state messages to the main game channel 
 ### Setup
 
 1. [Install Golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
-1. git clone
-1. git checkout skeleton
-1. git checkout -b chearim
-1. Install deps
-1. Test run
+1. Clone the convergence repo: `git clone git@github.com:kevinwang27/convergence.git && cd convergence`.
 
-### Skeleton code
+{: .note }
+You may see an SSH error if you haven't set up an SSH key for Github access before. Follow [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac) and try to run the clone command again.
 
-* Backend is done in server.go and others
-* Frontend in views/
-* Some Ably functionality done and comments with how to use the lib?
+3. Checkout the skeleton code: `git checkout skeleton`
+1. Create a new branch: `git checkout -b chearim`. This is where you'll be developing.
+1. Install dependencies: `go mod download`.
+1. Test run the server.
 
-### Task
+{: .note }
+In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
 
-* views/
+    1. `ABLY_KEY=<key> go run server.go`.
+    1. Navigate to `localhost:8080` in your browser.
+    1. You should see a basic page with `Convergence` and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!
+    1. Use `Ctrl-C` in your terminal to stop the server.
 
-### Running Locally
+### Code Structure
 
-* ABLY_KEY=<key> go run server.go
-* Multiple tabs for multiple people for testing
-* Ctrl-C to kill server
+The backend service is provided by `server.go`. `gamedb/` and `gamehelper/` are helper packages for the backend. You do not need to touch any of these, although you are free to if you would like to change or implement anything!
 
-## Helpful links
+The backend server also statically serves the frontend files that you will be implementing. The frontend files all reside in `views/`, and so long as you don't change the folder name, everything should work properly.
 
-* Ably docs
-* Backend spec docs
-* Git docs
+## Helpful Links
+
+* [Ably Pub/Sub Channels docs](https://ably.com/docs/products/channels)
+* [Ably Realtime SDK docs](https://ably.com/docs/api/realtime-sdk)
+* [Backend service docs](https://github.com/kevinwang27/convergence?tab=readme-ov-file#convergence)
+* [Git tutorial](https://www.atlassian.com/git)
