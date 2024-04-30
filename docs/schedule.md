@@ -18,21 +18,21 @@ nav_order: 2
 {: .d-inline-block }
 
 Project
-{: .label :label-green }
+{: .label .label-green }
 
 * [Frontend Masters - Intro to Javascript](https://frontendmasters.com/bootcamp/introduction-javascript/)
 * [Frontend Masters - Calculator Project Javascript](https://frontendmasters.com/bootcamp/calculator-javascript/)
 {: .d-inline-block }
 
 Project
-{: .label :label-green}
+{: .label .label-green}
 
 * [Frontend Masters - Javascript in Websites](https://frontendmasters.com/bootcamp/javascript-in-websites/)
 * [Frontend Masters - Feed a Star Mole Game](https://frontendmasters.com/bootcamp/web-game-project/) (Optional)
 {: .d-inline-block }
 
 Project
-{: .label :label-green }
+{: .label .label-green }
 
 ### Month 2
 
