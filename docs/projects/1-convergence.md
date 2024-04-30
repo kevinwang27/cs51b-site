@@ -13,7 +13,7 @@ Welcome to the first project of CS 51B! In this project, you will use what you l
 
 By the end of this project, you should have a fully functional game that users can play. You will even be able to deploy the app if you choose to make it accessible for everyone online!
 
-A demo of the final project deliverable and a walkthrough of this project spec in video form can be found below.
+An introduction of the project and walkthrough of this project spec in video form can be found below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D36lgepGr9s?si=Nn5vvGJapLy1rAbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -22,7 +22,7 @@ A demo of the final project deliverable and a walkthrough of this project spec i
 The easiest way to understand the rules is to watch the demo portion of the walkthrough above. You can also play around with the staff's solution to this project at [google.com](google.com).
 
 {: .note }
-Your frontend can and should be better! Our barebones version simply shows the basic game functionality.
+Your frontend can and should be better than ours! Our barebones version simply shows the basic game functionality.
 
 ### Basic Rules
 
@@ -36,6 +36,16 @@ The objective of the game is for the players to converge on a single word. The g
 
 Valid words must be a single word (no spaces) and new (not used in a previous round).
 
+Below is a sample playthrough of the game, taken from the video above.
+
+| round | player 1 | player 2 | player 3 |
+|:------|:---------|:---------|:---------|
+| 1     | dog      | bottle   | computer |
+| 2     | water    | water    | thing    |
+| 3     |          | drop     | drop     |
+
+Because both words match in round 3, the game is finished!
+
 ## Architecture
 
 ![](../../assets/architecture.jpg)
@@ -44,7 +54,7 @@ This is an architecture diagram that shows the different components involved in 
 
 Each box represents a *service*, which is basically code running somewhere that provides some functionality, whether that be code in someone's browser (`C1` and `C2`), a REST API service (`Backend`), or a realtime Pub/Sub service (`Ably`). Each line or arrow represents an interaction between two services. Usually, a line or arrow just indicates that API calls are made, but because our app is live and multiplayer, we need some realtime communication as well. Therefore, you'll primarily see *Pub/Sub channels* being used for interaction between the services.
 
-Don't worry if you're confused by all of this now! We'll explain what Pub/Sub channels are and walk through each part of the diagram in detail below.
+**Don't worry if you're confused by all of this right now!** We'll explain what Pub/Sub channels are and walk through each part of the diagram in detail below.
 
 ### Pub/Sub Channels
 
@@ -52,15 +62,17 @@ Pub/Sub channels are one of many ways for services to communicate in realtime. T
 
 A client would first make a REST API call to the backend to create a new game. That's totally fine and exactly what happens in our app. But how does that client know when other players join the game that was just made? With REST API calls only, the client would need to continually call the backend and ask if any new players joined. There's no way for the backend to be able to tell the client(s) when someone joins. The same problem exists for all the other parts of the game that require synchronization, such as when players leave, when players submit words, when rounds are completed, etc.
 
-So how do Pub/Sub channels work to solve this? *Pub/Sub* stands for Publish/Subscribe, which describes the basic premise. Publishers can publish *messages*, or pieces of data, to *channels*. Subscribers can subscribe to channels and receive new messages published to those channels in realtime. A channel can have any number of publishers and subscribers, and subscribers each receive a copy of each new published message.
+![](../../assets/pubsub.jpg)
 
-This is perfect for our application! Our backend service can publish game updates to a single main game channel when players enter/leave, words are submitted, rounds end, etc. Every client that joins a game can simply subscribe to that game's main channel to stay up to date.
+So how do Pub/Sub channels work to solve this? *Pub/Sub* stands for Publish/Subscribe, which describes the basic premise. Publishers can publish *messages*, or pieces of data, to *channels*. Subscribers can subscribe to channels and receive new messages published to those channels in realtime. A channel can have any number of publishers and subscribers, and subscribers each receive a copy of every new published message.
+
+This is perfect for our application! Our backend service can publish game updates to a single main game channel when players enter/leave, words are submitted, rounds end, etc. Every client that joins a game can simply subscribe to that game's main channel to stay up to date. We can also use channels for players to communicate with the backend as well, although in that case, each channel only has one publisher and subscriber.
 
 ### Ably
 
-Instead of implementing Pub/Sub functionality from scratch, we can use a third party service that provides that functionality to us. That's what the Ably box is for in the architecture diagram. Ably provides the ability to publish and subscribe to channels as well as many other features.
+Instead of implementing Pub/Sub functionality from scratch, we can use a third party service that provides that functionality to us. That's what the Ably box is for in the architecture diagram. [Ably](https://ably.com/) provides the ability to publish and subscribe to channels as well as many other features.
 
-Ably provides one feature in particular that is helpful for our application. That feature is called [presence](https://ably.com/docs/presence-occupancy/presence). You can think of it as an additional optional channel tied to an existing channel that specifically used for indicating when players enter and leave. We use the presence feature for the main game channel to indicate when players enter/leave a game.
+Ably provides one feature in particular that is helpful for our application. That feature is called [presence](https://ably.com/docs/presence-occupancy/presence). You can think of it as an additional optional channel tied to an existing channel that's specifically used for indicating when players enter and leave. We use the presence feature for the main game channel to indicate when players enter/leave a game.
 
 For more information about Ably's Pub/Sub Channels offering, refer to [their docs](https://ably.com/docs/products/channels). These could be helpful as you work with channels in this project as well.
 
@@ -81,7 +93,7 @@ The backend service also publishes game state messages to the main game channel 
 
 ### Setup
 
-1. [Install golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
+1. [Install Golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
 1. git clone
 1. git checkout skeleton
 1. git checkout -b chearim
