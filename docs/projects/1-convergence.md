@@ -13,7 +13,7 @@ Welcome to the first project of CS 51B! In this project, you will use what you l
 
 By the end of this project, you should have a fully functional game that users can play. You will even be able to deploy the app if you choose to make it accessible for everyone online!
 
-A walkthrough of this project spec in video form can be found below.
+A demo of the final project deliverable and a walkthrough of this project spec in video form can be found below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D36lgepGr9s?si=Nn5vvGJapLy1rAbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
