@@ -10,15 +10,15 @@ nav_order: 2
 
 ### Month 1
 
-* [Frontend Masters - Intro to HTML](https://frontendmasters.com/bootcamp/introduction-html/)
-* [Frontend Masters - Intro to CSS](https://frontendmasters.com/bootcamp/introduction-css/)
-* [Frontend Masters - HTML Forms](https://frontendmasters.com/bootcamp/html-forms/)
-* [Frontend Masters - Embeds and Github Pages](https://frontendmasters.com/bootcamp/embeds-github-pages/)
+* [Frontend Masters - Intro to HTML](https://frontendmasters.com/bootcamp/introduction-html/) [Lecture](){: .label .label-yellow }
+* [Frontend Masters - Intro to CSS](https://frontendmasters.com/bootcamp/introduction-css/) [Lecture](){: .label .label-yellow }
+* [Frontend Masters - HTML Forms](https://frontendmasters.com/bootcamp/html-forms/) [Lecture](){: .label .label-yellow }
+* [Frontend Masters - Embeds and Github Pages](https://frontendmasters.com/bootcamp/embeds-github-pages/) [Lecture](){: .label .label-yellow }
 * [Frontend Masters - Calculator Project HTML & CSS](https://frontendmasters.com/bootcamp/calculator-html-css/) [Project](){: .label }
-* [Frontend Masters - Intro to Javascript](https://frontendmasters.com/bootcamp/introduction-javascript/)
-* [Frontend Masters - Calculator Project Javascript](https://frontendmasters.com/bootcamp/calculator-javascript/)
-* [Frontend Masters - Javascript in Websites](https://frontendmasters.com/bootcamp/javascript-in-websites/)
-* [Frontend Masters - Feed a Star Mole Game](https://frontendmasters.com/bootcamp/web-game-project/) (Optional)
+* [Frontend Masters - Intro to Javascript](https://frontendmasters.com/bootcamp/introduction-javascript/) [Lecture](){: .label .label-yellow }
+* [Frontend Masters - Calculator Project Javascript](https://frontendmasters.com/bootcamp/calculator-javascript/) [Project](){: .label }
+* [Frontend Masters - Javascript in Websites](https://frontendmasters.com/bootcamp/javascript-in-websites/) [Lecture](){: .label .label-yellow }
+* [Frontend Masters - Feed a Star Mole Game](https://frontendmasters.com/bootcamp/web-game-project/) (Optional) [Project](){: .label }
 
 ### Month 2
 
@@ -26,7 +26,7 @@ nav_order: 2
 
 ### Month 3
 
-* [Frontend Masters - Complete Intro to React, v8](https://frontendmasters.com/courses/complete-react-v8/)
+* [Frontend Masters - Complete Intro to React, v8](https://frontendmasters.com/courses/complete-react-v8/) [Lecture](){: .label .label-yellow }
 
 ### Month 4
 
