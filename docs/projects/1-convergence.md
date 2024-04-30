@@ -9,7 +9,7 @@ parent: Projects
 
 ## Introduction
 
-Welcome to the first project of CS 51B! In this project, you will use what you learned from the Frontend Masters Bootcamp to build a browser-based multiplayer word game called Convergence. We have provided the backend of this app; you will create the frontend.
+Welcome to the first project of CS 51B! In this project, you will use what you learned from the Frontend Masters Bootcamp to build a browser-based multiplayer word game called **Convergence**. We have provided the backend of this app; you will create the frontend.
 
 By the end of this project, you should have a fully functional game that users can play. You will even be able to deploy the app if you choose to make it accessible for everyone online!
 
@@ -94,20 +94,20 @@ The backend service also publishes game state messages to the main game channel 
 ### Setup
 
 1. [Install Golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
-1. Clone the convergence repo: `git clone git@github.com:kevinwang27/convergence.git && cd convergence`.
+1. Clone the convergence repo: `git clone git@github.com:kevinwang27/convergence.git && cd convergence`
 
 {: .note }
 You may see an SSH error if you haven't set up an SSH key for Github access before. Follow [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac) and try to run the clone command again.
 
 3. Checkout the skeleton code: `git checkout skeleton`
 1. Create a new branch: `git checkout -b chearim`. This is where you'll be developing.
-1. Install dependencies: `go mod download`.
+1. Install dependencies: `go mod download`
 1. Test run the server.
 
 {: .note }
 In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
 
-    1. `ABLY_KEY=<key> go run server.go`.
+    1. `ABLY_KEY=<key> go run server.go`
     1. Navigate to `localhost:8080` in your browser.
     1. You should see a basic page with `Convergence` and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!
     1. Use `Ctrl-C` in your terminal to stop the server.
