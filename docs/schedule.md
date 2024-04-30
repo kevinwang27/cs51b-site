@@ -15,7 +15,7 @@ nav_order: 2
 * [Frontend Masters - HTML Forms](https://frontendmasters.com/bootcamp/html-forms/)
 * [Frontend Masters - Embeds and Github Pages](https://frontendmasters.com/bootcamp/embeds-github-pages/)
 * [Frontend Masters - Calculator Project HTML & CSS](https://frontendmasters.com/bootcamp/calculator-html-css/)
-{: .d-inline-block }
+{: .d-inline }
 
 Project
 {: .label .label-green }
