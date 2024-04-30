@@ -81,9 +81,12 @@ The backend service also publishes game state messages to the main game channel 
 
 ### Setup
 
-* (Recommended) WSL
-* Install golang
-* Download zip
+1. [Install golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
+1. git clone
+1. git checkout skeleton
+1. git checkout -b chearim
+1. Install deps
+1. Test run
 
 ### Skeleton code
 
