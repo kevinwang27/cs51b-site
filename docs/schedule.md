@@ -22,7 +22,7 @@ nav_order: 2
 
 ### Month 2
 
-* [Project 1: Convergence]({% link docs/projects/1-convergence.md %})
+* [Project 1: Convergence]({% link docs/projects/1-convergence.md %}) [Project](){: .label }
 
 ### Month 3
 
