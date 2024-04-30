@@ -102,11 +102,11 @@ You may see an SSH error if you haven't set up an SSH key for Github access befo
 3. Checkout the skeleton code: `git checkout skeleton`
 1. Create a new branch: `git checkout -b chearim`. This is where you'll be developing.
 1. Install dependencies: `go mod download`
-1. Test run the server.
 
 {: .note }
 In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
-
+ 
+6. Test run the server.
   1. `ABLY_KEY=<key> go run server.go`
   1. Navigate to `localhost:8080` in your browser.
   1. You should see a basic page with `Convergence` and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!

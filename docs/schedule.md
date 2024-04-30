@@ -10,74 +10,67 @@ nav_order: 2
 
 ### Month 1
 
-<div>
 * [Frontend Masters - Intro to HTML](https://frontendmasters.com/bootcamp/introduction-html/)
 {: .d-inline-block }
 
 Lecture
 {: .label }
-</div>
-{: .d-block }
 
-<div>
+<br>
+
 * [Frontend Masters - Intro to CSS](https://frontendmasters.com/bootcamp/introduction-css/)
 {: .d-inline-block }
 
 Lecture
 {: .label }
-</div>
 
-<div>
+<br>
+
 * [Frontend Masters - HTML Forms](https://frontendmasters.com/bootcamp/html-forms/)
 {: .d-inline-block }
 
 Lecture
 {: .label }
-</div>
 
-<div>
+<br>
+
 * [Frontend Masters - Embeds and Github Pages](https://frontendmasters.com/bootcamp/embeds-github-pages/)
 {: .d-inline-block }
 
 Lecture
 {: .label }
-</div>
 
-<div>
+<br>
+
 * Frontend Masters - Calculator Project
 {: .d-inline-block }
 
 Project
 {: .label :label-green }
-</div>
 
   * [HTML and CSS](https://frontendmasters.com/bootcamp/calculator-html-css/)
   * [Javascript](https://frontendmasters.com/bootcamp/calculator-javascript/)
 
-<div>
 * [Frontend Masters - Intro to Javascript](https://frontendmasters.com/bootcamp/introduction-javascript/)
 {: .d-inline-block }
 
 Lecture
 {: .label }
-</div>
 
-<div>
+<br>
+
 * [Frontend Masters - Javascript in Websites](https://frontendmasters.com/bootcamp/javascript-in-websites/)
 {: .d-inline-block }
 
 Lecture
 {: .label }
-</div>
-{: .d-block }
 
-<div>
+<br>
+
 * [Frontend Masters - Feed a Star Mole Game](https://frontendmasters.com/bootcamp/web-game-project/) (Optional)
 
 Project
 {: .label :label-green }
-</div>
-{: .d-block }
 
 ### Month 2
 
