@@ -29,8 +29,8 @@ Your frontend can and should be better! Our barebones version simply shows the b
 The objective of the game is for the players to converge on a single word. The game starts with each player submitting a word. After that, each round proceeds as follows:
 
 1. The unique submitted words from the previous round are the new target words for the current round.
-1. If there was only one unique word (all words matched), then the players have converged and the game is finished!
-1. Otherwise, based on the target words, each player will come up with a new word that hasn't been used before.
+1. If there was only one unique word (all the words matched), then the players have converged and the game is finished!
+1. Otherwise, based on the target words, each player comes up with a new word.
 1. The first N words submitted will be taken as the round's submitted words, where N is the number of unique target words.
 1. Repeat from step 1.
 
@@ -38,11 +38,11 @@ Valid words must be a single word (no spaces) and new (not used in a previous ro
 
 ## Architecture
 
-![](../assets/architecture.jpg)
+![](../../assets/architecture.jpg)
 
 This is an architecture diagram that shows the different components involved in building the convergence application. It is extremely common to create one of these as part of the engineering design process to visually represent what will be built.
 
-Each box represents a *service*, which is basically code running somewhere that provides some functionality, whether that be code in someone's browser (C1 and C2), a REST API service (Backend), or a realtime Pub/Sub service (Ably). Each line or arrow represents an interaction between two services. Usually, a line or arrow just indicates that API calls are made, but because our app is live and multiplayer, we need some realtime communication as well. Therefore, you'll primarily see *Pub/Sub channels* being used for interaction between the services.
+Each box represents a *service*, which is basically code running somewhere that provides some functionality, whether that be code in someone's browser (`C1` and `C2`), a REST API service (`Backend`), or a realtime Pub/Sub service (`Ably`). Each line or arrow represents an interaction between two services. Usually, a line or arrow just indicates that API calls are made, but because our app is live and multiplayer, we need some realtime communication as well. Therefore, you'll primarily see *Pub/Sub channels* being used for interaction between the services.
 
 Don't worry if you're confused by all of this now! We'll explain what Pub/Sub channels are and walk through each part of the diagram in detail below.
 
@@ -94,6 +94,18 @@ The backend service also publishes game state messages to the main game channel 
 * Frontend in views/
 * Some Ably functionality done and comments with how to use the lib?
 
+### Task
+
+* views/
+
 ### Running Locally
 
 * ABLY_KEY=<key> go run server.go
+* Multiple tabs for multiple people for testing
+* Ctrl-C to kill server
+
+## Helpful links
+
+* Ably docs
+* Backend spec docs
+* Git docs
