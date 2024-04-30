@@ -107,10 +107,10 @@ You may see an SSH error if you haven't set up an SSH key for Github access befo
 {: .note }
 In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
 
-    1. `ABLY_KEY=<key> go run server.go`
-    1. Navigate to `localhost:8080` in your browser.
-    1. You should see a basic page with `Convergence` and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!
-    1. Use `Ctrl-C` in your terminal to stop the server.
+  1. `ABLY_KEY=<key> go run server.go`
+  1. Navigate to `localhost:8080` in your browser.
+  1. You should see a basic page with `Convergence` and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!
+  1. Use `Ctrl-C` in your terminal to stop the server.
 
 ### Code Structure
 

@@ -17,6 +17,7 @@ nav_order: 2
 Lecture
 {: .label }
 </div>
+{: .d-block }
 
 <div>
 * [Frontend Masters - Intro to CSS](https://frontendmasters.com/bootcamp/introduction-css/)
@@ -68,6 +69,7 @@ Lecture
 Lecture
 {: .label }
 </div>
+{: .d-block }
 
 <div>
 * [Frontend Masters - Feed a Star Mole Game](https://frontendmasters.com/bootcamp/web-game-project/) (Optional)
@@ -75,6 +77,7 @@ Lecture
 Project
 {: .label :label-green }
 </div>
+{: .d-block }
 
 ### Month 2
 
