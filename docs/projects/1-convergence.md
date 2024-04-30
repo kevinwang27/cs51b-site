@@ -38,15 +38,37 @@ Valid words must be a single word (no spaces) and new (not used in a previous ro
 
 ## Architecture
 
-* Diagram
-* Text overview
+![](../assets/architecture.jpg)
 
-### Pub/Sub + Ably
+This is an architecture diagram that shows the different components involved in building the convergence application. It is extremely common to create one of these as part of the engineering design process to visually represent what will be built.
 
-* Explain pub/sub and the Ably service
-* Link to Ably realtime docs
+Each box represents a *service*, which is basically code running somewhere that provides some functionality, whether that be code in someone's browser (C1 and C2), a REST API service (Backend), or a realtime Pub/Sub service (Ably). Each line or arrow represents an interaction between two services. Usually, a line or arrow just indicates that API calls are made, but because our app is live and multiplayer, we need some realtime communication as well. Therefore, you'll primarily see *Pub/Sub channels* being used for interaction between the services.
 
-### Backend server
+Don't worry if you're confused by all of this now! We'll explain what Pub/Sub channels are and walk through each part of the diagram in detail below.
+
+### Pub/Sub Channels
+
+Pub/Sub channels are one of many ways for services to communicate in realtime. To understand why we need these in our app, let's consider what would happen if we tried to only use HTTP REST API calls.
+
+A client would first make a REST API call to the backend to create a new game. That's totally fine and exactly what happens in our app. But how does that client know when other players join the game that was just made? With REST API calls only, the client would need to continually call the backend and ask if any new players joined. There's no way for the backend to be able to tell the client(s) when someone joins. The same problem exists for all the other parts of the game that require synchronization, such as when players leave, when players submit words, when rounds are completed, etc.
+
+So how do Pub/Sub channels work to solve this? *Pub/Sub* stands for Publish/Subscribe, which describes the basic premise. Publishers can publish *messages*, or pieces of data, to *channels*. Subscribers can subscribe to channels and receive new messages published to those channels in realtime. A channel can have any number of publishers and subscribers, and subscribers each receive a copy of each new published message.
+
+This is perfect for our application! Our backend service can publish game updates to a single main game channel when players enter/leave, words are submitted, rounds end, etc. Every client that joins a game can simply subscribe to that game's main channel to stay up to date.
+
+### Ably
+
+Instead of implementing Pub/Sub functionality from scratch, we can use a third party service that provides that functionality to us. That's what the Ably box is for in the architecture diagram. Ably provides the ability to publish and subscribe to channels as well as many other features.
+
+Ably provides one feature in particular that is helpful for our application. That feature is called [presence](https://ably.com/docs/presence-occupancy/presence). You can think of it as an additional optional channel tied to an existing channel that specifically used for indicating when players enter and leave. We use the presence feature for the main game channel to indicate when players enter/leave a game.
+
+For more information about Ably's Pub/Sub Channels offering, refer to [their docs](https://ably.com/docs/products/channels). These could be helpful as you work with channels in this project as well.
+
+### C1 and C2
+
+The C1 and C2 boxes refer to clients (players) running the frontend code that you will be implementing. The architecture diagram shows two players just to illustrate that the player channels are created per-player but not the main game channel. Any number of players could be in the app and in a single game at once.
+
+### Backend
 
 * Explain backend server API and how it uses Ably channels/presence
 * Link to convergence repo README (API spec and message types)
