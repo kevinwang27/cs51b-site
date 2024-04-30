@@ -84,8 +84,8 @@ The C1 and C2 boxes refer to clients (players) running the frontend code that yo
 
 The backend service provides a few HTTP REST *API endpoints*, or URLs that accept API calls and produce the desired responses. The only API endpoints that you need to call are:
 
-* `POST /games` for creating new games
-* `GET /games/{gameId}` for getting the existence/status of games
+* `POST api/games` for creating new games
+* `GET api/games/{gameId}` for getting the existence/status of games
 
 The backend service also publishes game state messages to the main game channel and receives messages from player channels. The details about message names and fields is provided in the [backend API documentation](https://github.com/kevinwang27/convergence?tab=readme-ov-file#convergence). Most of the work will be processing and/or sending these messages properly, so you'll definitely need to take a look!
 
