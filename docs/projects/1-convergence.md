@@ -22,8 +22,10 @@ Please make sure you're logged into your Google account to access the video.
 
 ## Convergence Rules
 
+The easiest way to understand the rules is to watch the demo portion of the video above. You can also play around with the staff version of the game [here](http://5.78.115.40:8080/).
+
 {: .note }
-The easiest way to understand the rules is to watch the demo portion of the video above.
+Your game can and should be much better than ours! Our barebones version just shows the basic functionality of the game.
 
 ### Basic Rules
 
