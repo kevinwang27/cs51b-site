@@ -116,11 +116,11 @@ The backend server also statically serves the frontend files that you will be im
 {: .note }
 In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
  
-1. In your terminal, navigate to the base `convergence/` directory.
-1. Run the server: `ABLY_KEY=<key> go run server.go`
-1. Navigate to `localhost:8080` in your browser.
-1. If you want to test multiplayer functionality, you can open a new tab/window and navigate to the same link `localhost:8080`.
-1. Use `Ctrl-C` in your terminal to stop the server when you are done.
+- [ ] In your terminal, navigate to the base `convergence/` directory.
+- [ ] Run the server: `ABLY_KEY=<key> go run server.go`
+- [ ] Navigate to `localhost:8080` in your browser.
+- [ ] If you want to test multiplayer functionality, you can open a new tab/window and navigate to the same link `localhost:8080`.
+- [ ] Use `Ctrl-C` in your terminal to stop the server when you are done.
 
 ## Helpful Links
 
