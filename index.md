@@ -15,9 +15,9 @@ nav_order: 1
 
 ## Welcome to CS 51B: Intro to Frontend Development!
 
-In this class, you will learn how to create the frontend of various types of applications, starting with web applications using the basic programming languages, HTML, CSS, and Javascript. We will then move onto web frameworks, and if time permits, explore other platforms as well. Along the way, you will complete projects using the skills you learn and produce real applications that people will be able to visit and use.
+In this class, you will learn how to create the frontend of various types of applications, starting with web applications using the basic programming languages, HTML, CSS, and Javascript. We will then move onto web frameworks, and if time permits, explore other platforms as well. Along the way, you will complete projects using the skills you learn and produce real applications that people will be able to use.
 
-By the end of the class, you should be familiar with some of the most common technologies used by frontend developers today and be able to use them to create the applications that you come up with! You will also have some projects under your belt to start building your portfolio.
+By the end of the class, you should be familiar with some of the most common technologies used by frontend developers today and be able to use them to create applications that you come up with! You will also have some projects under your belt to start building your portfolio.
 
 PS: Can you guess why I chose the numbers 5/1? 🙂
 

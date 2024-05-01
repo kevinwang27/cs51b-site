@@ -13,25 +13,23 @@ Welcome to the first project of CS 51B! In this project, you will use what you l
 
 By the end of this project, you should have a fully functional game that users can play. You will even be able to deploy the app if you choose to make it accessible for everyone online!
 
-An introduction of the project and walkthrough of this project spec in video form can be found below.
+A video recording of an introduction to the project and walkthrough of this project spec can be found below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D36lgepGr9s?si=Nn5vvGJapLy1rAbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Convergence Rules
 
-The easiest way to understand the rules is to watch the demo portion of the walkthrough above. You can also play around with the staff's solution to this project at [google.com](google.com).
-
 {: .note }
-Your frontend can and should be better than ours! Our barebones version simply shows the basic game functionality.
+The easiest way to understand the rules is to watch the demo portion of the video above.
 
 ### Basic Rules
 
 The objective of the game is for the players to converge on a single word. The game starts with each player submitting a word. After that, each round proceeds as follows:
 
-1. The unique submitted words from the previous round are the new target words for the current round.
+1. The *unique* submitted words from the previous round are the new *target words* for the current round.
 1. If there was only one unique word (all the words matched), then the players have converged and the game is finished!
 1. Otherwise, based on the target words, each player comes up with a new word.
-1. The first N words submitted will be taken as the round's submitted words, where N is the number of unique target words.
+1. The first N words submitted will be taken as the round's submitted words, where N is the number of target words.
 1. Repeat from step 1.
 
 Valid words must be a single word (no spaces) and new (not used in a previous round).
@@ -50,7 +48,7 @@ Because both words match in round 3, the game is finished!
 
 ![](../../assets/architecture.jpg)
 
-This is an architecture diagram that shows the different components involved in building the convergence application. It is extremely common to create one of these as part of the engineering design process to visually represent what will be built.
+This is an *architecture diagram* that shows the different components involved in building the convergence application. It is extremely common to create one of these as part of the engineering design process to visually represent what will be built.
 
 Each box represents a *service*, which is basically code running somewhere that provides some functionality, whether that be code in someone's browser (`C1` and `C2`), a REST API service (`Backend`), or a realtime Pub/Sub service (`Ably`). Each line or arrow represents an interaction between two services. Usually, a line or arrow just indicates that API calls are made, but because our app is live and multiplayer, we need some realtime communication as well. Therefore, you'll primarily see *Pub/Sub channels* being used for interaction between the services.
 
@@ -93,30 +91,36 @@ The backend service also publishes game state messages to the main game channel 
 
 ### Setup
 
-1. [Install Golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
-1. Clone the convergence repo: `git clone git@github.com:kevinwang27/convergence.git && cd convergence`
+- [ ] [Install Golang (Go)](https://go.dev/doc/install). The backend is built in Go, and you'll need to use Go commands to run the application.
+- [ ] Clone the convergence repo: `git clone git@github.com:kevinwang27/convergence.git && cd convergence`
 
 {: .note }
 You may see an SSH error if you haven't set up an SSH key for Github access before. Follow [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac) and try to run the clone command again.
 
-3. Checkout the skeleton code: `git checkout skeleton`
-1. Create a new branch: `git checkout -b chearim`. This is where you'll be developing.
-1. Install dependencies: `go mod download`
+- [ ] Checkout the skeleton code: `git checkout skeleton`
+- [ ] Create a new branch: `git checkout -b chearim`. This is where you'll be developing.
+- [ ] Install dependencies: `go mod download`
+- [ ] [Test run the server](#running-locally).
 
 {: .note }
-In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
- 
-6. Test run the server.
-  1. `ABLY_KEY=<key> go run server.go`
-  1. Navigate to `localhost:8080` in your browser.
-  1. You should see a basic page with `Convergence` and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!
-  1. Use `Ctrl-C` in your terminal to stop the server.
+When you first run your server, you should see a basic page with `Convergence` at the top and a `ping` button. Click `ping` to contact the backend server. If a `pong` response shows up, then everything is set up properly!
 
 ### Code Structure
 
 The backend service is provided by `server.go`. `gamedb/` and `gamehelper/` are helper packages for the backend. You do not need to touch any of these, although you are free to if you would like to change or implement anything!
 
 The backend server also statically serves the frontend files that you will be implementing. The frontend files all reside in `views/`, and so long as you don't change the folder name, everything should work properly.
+
+### Running Locally
+
+{: .note }
+In order to run the server, you'll need a key to authenticate with Ably. Please contact a staff member and they will send you the key.
+ 
+1. In your terminal, navigate to the base `convergence/` directory.
+1. Run the server: `ABLY_KEY=<key> go run server.go`
+1. Navigate to `localhost:8080` in your browser.
+1. If you want to test multiplayer functionality, you can open a new tab/window and navigate to the same link `localhost:8080`.
+1. Use `Ctrl-C` in your terminal to stop the server when you are done.
 
 ## Helpful Links
 
