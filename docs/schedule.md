@@ -6,9 +6,13 @@ nav_order: 2
 
 # Schedule
 
-[Skip to current month](#month-2){: .btn .btn-outline }
+[Skip to current month](#month-1){: .btn .btn-outline }
 
 ### Month 1
+{: .d-inline-block }
+
+Current
+{: .label .label-green }
 
 * [Frontend Masters - Intro to HTML](https://frontendmasters.com/bootcamp/introduction-html/) [Lecture](){: .label .label-yellow }
 * [Frontend Masters - Intro to CSS](https://frontendmasters.com/bootcamp/introduction-css/) [Lecture](){: .label .label-yellow }
