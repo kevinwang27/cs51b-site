@@ -17,6 +17,9 @@ A video recording of an introduction to the project and walkthrough of this proj
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZECBIrsGSU?si=Nn5vvGJapLy1rAbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{: .note }
+Please make sure you're logged into your Google account to access the video.
+
 ## Convergence Rules
 
 {: .note }
